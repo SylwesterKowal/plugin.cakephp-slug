@@ -76,5 +76,13 @@ public $helpers = ['Slug.Slug'];
 ### View
 
 ```
-<?= $this->Slug->link($productEntity,$productEntity->sku,['controller'=>'Products','action'=>'view',$productEntity->id,'plugin'=>'Product']); ?>
+<?php
+echo $this->Slug->link($productEntity, $productEntity->name,
+[
+    'controller'=>'Products',
+    'action'=>'view',
+    $productEntity->id,
+    'plugin'=>'Product'
+]);
+?>
 ```
