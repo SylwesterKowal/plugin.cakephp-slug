@@ -42,7 +42,6 @@ class SlugRoute extends Route
         }
         $tableSlugs = TableRegistry::get('Slug.Slugs');
         $params = $tableSlugs->loadBySlug($params['slug']);
-        TableRegistry::clear();
         return $params;
     }
 
