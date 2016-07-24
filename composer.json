@@ -2,6 +2,12 @@
     "name": "SylwesterKowal/plugin.cakephp-slug",
     "description": "Slug plugin for CakePHP",
     "type": "cakephp-plugin",
+    "repositories": [
+        {
+            "url": "https://github.com/SylwesterKowal/plugin.cakephp-slug",
+            "type": "git"
+        }
+    ],
     "require": {
         "php": ">=5.4.16",
         "cakephp/cakephp": "~3.0"
