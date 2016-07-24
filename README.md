@@ -19,3 +19,7 @@ composer require sylwesterkowal/plugin.cakephp-slug
 ```
 bin/cake migrations migrate -p Slug
 ```
+
+## Configure Routing
+
+In scr create Routing folder.
