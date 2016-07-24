@@ -13,3 +13,9 @@ The recommended way to install composer packages is:
 ```
 composer require sylwesterkowal/plugin.cakephp-slug
 ```
+
+## Install Table
+
+```
+bin/cake migrations migrate -p MyAwesomePlugin
+```
