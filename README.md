@@ -1,8 +1,8 @@
-# Slug plugin for CakePHP
+# Slug plugin for CakePHP 3.x
 
-Plugin CakePHP to generate friendly URLs. Based on the database allows you to generate simple adersy URL for any data model:
-Product Link: http://domain.com/name
-Category Link: http://domain.com/name
+Plugin CakePHP to generate friendly URLs. Based on the database allows you to generate simple URL for any data model:<br/>
+Product Link: http://domain.com/slugged-product-name</br>
+Category Link: http://domain.com/slugged-category-name
 
 ## Installation
 
