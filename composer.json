@@ -1,5 +1,5 @@
 {
-    "name": "your-name-here/Slug",
+    "name": "SylwesterKowal/plugin.cakephp-slug",
     "description": "Slug plugin for CakePHP",
     "type": "cakephp-plugin",
     "require": {
