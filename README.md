@@ -75,14 +75,18 @@ public $helpers = ['Slug.Slug'];
 
 ### View
 
+In view use SlugHelper.
+Parameters are require for standard Html->link url when Slug Plugin for some reason will by offline.
+
 ```
-<?php
-echo $this->Slug->link($productEntity, $productEntity->name,
-[
-    'controller'=>'Products',
-    'action'=>'view',
-    $productEntity->id,
-    'plugin'=>'Product'
-]);
-?>
+echo $this->Slug->link(
+    $productEntity,  // Model Entity
+    $productEntity->name, // Anchor text
+    [ // parameters
+        'controller'=>'Products',
+        'action'=>'view', $productEntity->id,
+        'plugin'=>'Product'
+    ]
+);
+
 ```
