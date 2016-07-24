@@ -66,3 +66,15 @@ For example in plugin "Product" for table "ProductsTable.php" add
         ['routeClass' => 'Slug.SlugRoute']
     );
 ```
+
+### Controller
+
+```
+public $helpers = ['Slug.Slug'];
+```
+
+### View
+
+```
+<?= $this->Slug->link($productEntity,$productEntity->sku,['controller'=>'Products','action'=>'view',$productEntity->id,'plugin'=>'Product']); ?>
+```
