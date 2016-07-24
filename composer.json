@@ -1,5 +1,5 @@
 {
-    "name": "sylwesterkowal/plugin.cakephp-slug",
+    "name": "SylwesterKowal/plugin.cakephp-slug",
     "description": "CakePHP Plugin for Slugging",
     "type": "cakephp-plugin",
     "authors": [
