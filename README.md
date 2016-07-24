@@ -17,5 +17,5 @@ composer require sylwesterkowal/plugin.cakephp-slug
 ## Install Table
 
 ```
-bin/cake migrations migrate -p MyAwesomePlugin
+bin/cake migrations migrate -p Slug
 ```
