@@ -39,9 +39,9 @@ class SlugRoute extends Route
         if (!$params) {
             return false;
         }
-        $tableRedirects = TableRegistry::get('Slug.Redirects');
+        $tableSlugs = TableRegistry::get('Slug.Slugs');
 
-        $params = $tableRedirects->loadBySlug($params['slug']);
+        $params = $tableSlugs->loadBySlug($params['slug']);
         return $params;
     }
 

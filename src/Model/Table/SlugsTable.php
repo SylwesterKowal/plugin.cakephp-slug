@@ -19,7 +19,7 @@ use Cake\Validation\Validator;
  *
  * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
-class RedirectsTable extends Table
+class SlugsTable extends Table
 {
 
     /**
@@ -32,7 +32,7 @@ class RedirectsTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('redirects');
+        $this->table('slugs');
         $this->displayField('id');
         $this->primaryKey('id');
 
@@ -79,7 +79,7 @@ class RedirectsTable extends Table
     public function loadBySlug($slug){
 
         $redirect = $this->find()
-            ->where(['Redirects.slug'=>$slug])
+            ->where(['Slugs.slug'=>$slug])
             ->select(['plugin','controller','action','pass'])
             ->first()
             ->toArray();

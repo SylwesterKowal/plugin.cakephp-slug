@@ -11,7 +11,7 @@ use Cake\ORM\Entity;
  * @property string $slug
  * @property \Cake\I18n\Time $created
  */
-class Redirect extends Entity
+class Slug extends Entity
 {
 
     /**

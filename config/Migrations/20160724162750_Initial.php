@@ -6,7 +6,7 @@ class Initial extends AbstractMigration
     public function up()
     {
 
-        $this->table('redirects')
+        $this->table('slugs')
             ->addColumn('plugin', 'string', [
                 'default' => null,
                 'limit' => 255,
@@ -62,6 +62,6 @@ class Initial extends AbstractMigration
 
     public function down()
     {
-        $this->dropTable('redirects');
+        $this->dropTable('slugs');
     }
 }

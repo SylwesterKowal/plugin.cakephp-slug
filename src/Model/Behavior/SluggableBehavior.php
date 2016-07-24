@@ -36,7 +36,7 @@ class SluggableBehavior extends Behavior
     {
         $config = $this->config();
         $value = $entity->get($config['field']);
-        $this->Redirects = TableRegistry::get('Slug.Redirects');
+        $this->Slugs = TableRegistry::get('Slug.Slugs');
 
 
         $data['plugin'] = $config['plugin'];
@@ -44,7 +44,7 @@ class SluggableBehavior extends Behavior
         $data['action'] = $config['action'];
         $data['pass'] = $entity->get($config['pass']);
 
-        $redirect = $this->Redirects->find()
+        $redirect = $this->Slugs->find()
             ->where($data)
             ->first();
 
@@ -52,10 +52,10 @@ class SluggableBehavior extends Behavior
         $data['slug'] = strtolower(Text::slug($value, $config['replacement']));
 //        debug($redirect);
         if(!is_object($redirect)){
-            $redirect = $this->Redirects->newEntity();
+            $redirect = $this->Slugs->newEntity();
         }
-        $redirect = $this->Redirects->patchEntity($redirect, $data);
-        $this->Redirects->save($redirect);
+        $redirect = $this->Slugs->patchEntity($redirect, $data);
+        $this->Slugs->save($redirect);
     }
 
     public function afterSave(Event $event, EntityInterface $entity)

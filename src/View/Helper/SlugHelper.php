@@ -32,8 +32,8 @@ class SlugHelper extends Helper
     public function link($entity, $anchor, $params = [], $options = [])
     {
         $config = $this->config();
-        if (isset($entity->redirect->slug) && !empty($entity->redirect->slug)) {
-            $slug = $entity->redirect->slug;
+        if (isset($entity->slug->slug) && !empty($entity->slug->slug)) {
+            $slug = $entity->slug->slug;
             return $this->Html->link(h($anchor), $slug, $options);
         } else {
             return $this->Html->link(h($anchor), $params, $options);
