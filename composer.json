@@ -9,5 +9,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "repositories":[{
+        "type":"vcs",
+        "url":"https://github.com/kowalsylwester/plugin.cakephp-slug.git"
+    }]
 }
