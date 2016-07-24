@@ -1,31 +1,13 @@
 {
-  "name": "SylwesterKowal/plugin.cakephp-slug",
-  "description": "Slug plugin for CakePHP",
-  "type": "cakephp-plugin",
-  "repositories": [
-    {
-      "url": "https://github.com/SylwesterKowal/plugin.cakephp-slug",
-      "type": "git"
-    }
-  ],
-  "require": {
-    "php": ">=5.4.16",
-    "cakephp/cakephp": "~3.0"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "Slug\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Slug\\Test\\": "tests",
-      "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
-    }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+    "name": "sylwesterkowal/plugin.cakephp-slug",
+    "description": "CakePHP Plugin for Slugging",
+    "type": "composer-plugin",
+    "authors": [
+        {
+            "name": "SK",
+            "email": "sylwester.kowal@21w.pl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
 }
