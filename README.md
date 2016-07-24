@@ -17,7 +17,7 @@ composer require sylwesterkowal/plugin.cakephp-slug
 ## Install Table
 
 ```
-bin/cake migrations migrate -p Slug
+cake Migrations migrate -p Slug
 ```
 
 ## Configure Routing

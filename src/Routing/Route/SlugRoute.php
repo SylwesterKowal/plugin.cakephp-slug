@@ -5,6 +5,7 @@ use Cake\Routing\Route\Route;
 use Cake\Utility\Inflector;
 use Cake\ORM\Entity;
 use Cake\ORM\TableRegistry;
+use Cake\Controller\Controller;
 
 /**
  * This route class will transparently inflect the controller, action and plugin
@@ -39,9 +40,11 @@ class SlugRoute extends Route
         if (!$params) {
             return false;
         }
-        $tableSlugs = TableRegistry::get('Slug.Slugs');
+//        $tableSlugs = TableRegistry::get('Slug.Slugs');
+//        $params = $tableSlugs->loadBySlug($params['slug']);
 
-        $params = $tableSlugs->loadBySlug($params['slug']);
+        $this->loadModel('Slugs');
+        $params = $this->Slugs->loadBySlug($params['slug']);
         return $params;
     }
 
