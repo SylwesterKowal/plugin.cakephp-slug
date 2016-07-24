@@ -40,11 +40,9 @@ class SlugRoute extends Route
         if (!$params) {
             return false;
         }
-//        $tableSlugs = TableRegistry::get('Slug.Slugs');
-//        $params = $tableSlugs->loadBySlug($params['slug']);
-
-        $this->loadModel('Slugs');
-        $params = $this->Slugs->loadBySlug($params['slug']);
+        $tableSlugs = TableRegistry::get('Slug.Slugs');
+        $params = $tableSlugs->loadBySlug($params['slug']);
+        TableRegistry::clear();
         return $params;
     }
 
