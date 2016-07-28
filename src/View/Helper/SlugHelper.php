@@ -34,9 +34,9 @@ class SlugHelper extends Helper
         $config = $this->config();
         if (isset($entity->slug->slug) && !empty($entity->slug->slug)) {
             $slug = $entity->slug->slug;
-            return $this->Html->link(h($anchor), $slug, $options);
+            return $this->Html->link($anchor, $slug, $options);
         } else {
-            return $this->Html->link(h($anchor), $params, $options);
+            return $this->Html->link($anchor, $params, $options);
         }
     }
 }
