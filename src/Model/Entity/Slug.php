@@ -1,6 +1,5 @@
 <?php
 namespace Slug\Model\Entity;
-
 use Cake\ORM\Entity;
 
 /**

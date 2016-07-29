@@ -30,13 +30,14 @@ class SluggableBehavior extends Behavior
     public function initialize(array $config)
     {
         $this->_defaultConfig = $config;
+        $this->Slugs = TableRegistry::get('Slug.Slugs');
     }
 
     public function slug(Entity $entity)
     {
         $config = $this->config();
         $value = $entity->get($config['field']);
-        $this->Slugs = TableRegistry::get('Slug.Slugs');
+
 
 
         $data['plugin'] = $config['plugin'];
