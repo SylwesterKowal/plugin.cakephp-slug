@@ -11,6 +11,7 @@ namespace Slug\View\Helper;
 use Cake\View\Helper;
 use Cake\View\View;
 use Cake\View\HelperRegistry;
+use Cake\Event\Event;
 
 class SlugHelper extends Helper
 {
