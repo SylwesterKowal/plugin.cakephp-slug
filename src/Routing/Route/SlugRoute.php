@@ -36,7 +36,7 @@ class SlugRoute extends Route
     public function parse($url)
     {
 
-        $params = parent::parse($url);
+        $params = parent::parse($url, $method = '');
         if (!$params) {
             return false;
         }
