@@ -33,7 +33,7 @@ class SlugRoute extends Route
      * @param string $url The URL to parse
      * @return array|false An array of request parameters, or false on failure.
      */
-    public function parse($url)
+    public function parse($url, $method = '')
     {
 
         $params = parent::parse($url, $method = '');
